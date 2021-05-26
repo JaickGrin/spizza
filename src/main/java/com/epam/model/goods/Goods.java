@@ -1,15 +1,20 @@
 package com.epam.model.goods;
 
+import java.util.UUID;
+
 public abstract class Goods {
+    private UUID id;
     private String name;
     private NutritionFacts nutritionFacts;
     private double cost;
     private int quantity;
 
     public Goods() {
+        this.id = UUID.randomUUID();
     }
 
     public Goods(String name, NutritionFacts nutritionFacts, double cost, int quantity) {
+        this.id = UUID.randomUUID();
         this.name = name;
         this.nutritionFacts = nutritionFacts;
         this.cost = cost;
@@ -46,6 +51,14 @@ public abstract class Goods {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public double calculateCost() {

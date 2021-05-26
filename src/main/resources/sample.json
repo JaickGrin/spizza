@@ -1,0 +1,13 @@
+{
+  "id": "4300f82c-d16b-413c-a02e-19580221eeae",
+  "name": "Кола",
+  "nutritionFacts": {
+    "calories": 1.0,
+    "protein": 1.0,
+    "fat": 1.0,
+    "carbohydrates": 1.0
+  },
+  "cost": 1.0,
+  "quantity": 1,
+  "volume": 1.0
+}
